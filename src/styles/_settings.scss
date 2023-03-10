@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended-Bold.woff") format("woff2"),
+    url("../MonumentExtended-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended-Regular.woff2") format("woff2"),
+    url("../fonts/MonumentExtended-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+    url("../fonts/SpaceGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+$color-primary: #0f0f0f;
+$color-secondary: #a8dd35;
+$color-tertiary: #1c1c1c;
+$black: #000000;
+$white: #fff;
+$cancel: #b94252;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $color-tertiary;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-primary;
+  font-family: "Monument Extended", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: $color-tertiary;
+  text-decoration: none;
+}
+button,
+a,
+input {
+  cursor: pointer;
+  font-family: "Monument Extended", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background: none;
+  border: 2px solid $color-tertiary;
+  border-radius: 20px;
+  color: $color-tertiary;
+  padding: 20px 25px;
+  font-size: 1rem;
+  margin: 1.9rem 0;
+}
+
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+}
