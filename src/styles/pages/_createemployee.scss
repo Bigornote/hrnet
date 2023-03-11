@@ -1,0 +1,48 @@
+.employee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: calc(100vh - 150px);
+
+  .img-container {
+    width: 330px;
+    position: absolute;
+    img {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+
+    .wrapper {
+      margin-bottom: 10px;
+    }
+
+    .wrapper-adress {
+      display: flex;
+      gap: 1vw;
+      label {
+        width: calc(50% - 0.5vw);
+      }
+    }
+    .btn-primary {
+      margin: auto;
+    }
+  }
+}
